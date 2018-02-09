@@ -1,0 +1,30 @@
+<!-- views/campaigns/new.ejs -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<div class="container" style="margin-top: 10%">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 centered-form">
+      <form action="/campaign/new" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="title">Trip Name</label>
+          <input type="text" name="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="goal">Price</label>
+          <input type="text" name="goal" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="deadline">Reservation date</label>
+          <input type="date" name="deadline" class="form-control">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Create trip</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
